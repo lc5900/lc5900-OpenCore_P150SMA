@@ -135,8 +135,6 @@
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -161,8 +159,6 @@
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -187,8 +183,6 @@
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -213,8 +207,6 @@
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -239,58 +231,24 @@
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Rename EHC1 to EH01 (USB)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
 				<key>Find</key>
 				<data>RUhDMQ==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
 				<key>Replace</key>
 				<data>RUgwMQ==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Rename EHC2 to EH02 (USB)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
 				<key>Find</key>
 				<data>RUhDMg==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
 				<key>Replace</key>
 				<data>RUgwMg==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
 				<key>TableSignature</key>
 				<data>RFNEVA==</data>
 			</dict>
@@ -366,31 +324,35 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,27,0</string>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
 				<key>layout-id</key>
 				<data>NwAAAA==</data>
-				<key>model</key>
-				<string>8 Series/C220 Series Chipset High Definition Audio Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>BgAmCg==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>EgQAAA==</data>
 				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-pipe</key>
+				<data>EgAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con2-alldata</key>
+				<data>/wAAAAEAAABAAAAA</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-cursormem</key>
 				<data>AACQAA==</data>
+				<key>framebuffer-memorycount</key>
+				<data>AgAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>AgAAAA==</data>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -488,66 +450,32 @@
 			<dict>
 				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
-				<key>Comment</key>
-				<string>PS2Controller</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Controller</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
-				<key>Comment</key>
-				<string>Keyboard</string>
+				<string>VoodooPS2Controller.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooPS2Keyboard</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
+				<string>Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/MacOS/VoodooPS2Keyboard</string>
 				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
+				<string>Contents/PlugIns/VoodooPS2Keyboard.kext/Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
-				<key>Comment</key>
-				<string>Mouse</string>
+				<string>VoodooPS2Controller.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooPS2Mouse</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
+				<string>Contents/PlugIns/VoodooPS2Mouse.kext/Contents/MacOS/VoodooPS2Mouse</string>
 				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
-				<key>Comment</key>
-				<string>Trackpad</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooPS2Trackpad</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
+				<string>Contents/PlugIns/VoodooPS2Mouse.kext/Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>BundlePath</key>
@@ -556,8 +484,6 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -588,8 +514,6 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -684,8 +608,6 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -847,8 +769,6 @@
 			<true/>
 			<key>ExternalDiskIcons</key>
 			<true/>
-			<key>IncreasePciBarSize</key>
-			<false/>
 			<key>LapicKernelPanic</key>
 			<false/>
 			<key>PanicNoKextDump</key>
@@ -864,7 +784,8 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
@@ -918,10 +839,6 @@
 		<dict>
 			<key>AllowNvramReset</key>
 			<true/>
-			<key>AllowSetDefault</key>
-			<false/>
-			<key>AuthRestart</key>
-			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
@@ -993,8 +910,6 @@
 		</dict>
 		<key>LegacyEnable</key>
 		<false/>
-		<key>LegacyOverwrite</key>
-		<false/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -1020,8 +935,6 @@
 				<string>BootOrder</string>
 			</array>
 		</dict>
-		<key>WriteFlash</key>
-		<false/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1091,8 +1004,6 @@
 			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
-			<key>AppleSmcIo</key>
-			<false/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
@@ -1104,8 +1015,6 @@
 			<key>FirmwareVolume</key>
 			<false/>
 			<key>HashServices</key>
-			<false/>
-			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
