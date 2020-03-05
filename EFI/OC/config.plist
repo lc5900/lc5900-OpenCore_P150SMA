@@ -194,7 +194,7 @@
 				<key>Comment</key>
 				<string>_Q11 to XQ11</string>
 				<key>Count</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
@@ -220,7 +220,7 @@
 				<key>Comment</key>
 				<string>_Q12 to XQ12</string>
 				<key>Count</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
@@ -351,7 +351,7 @@
 			<key>ProtectCsmRegion</key>
 			<false/>
 			<key>ProtectSecureBoot</key>
-			<false/>
+			<true/>
 			<key>ProvideCustomSlide</key>
 			<true/>
 			<key>SetupVirtualMap</key>
@@ -724,7 +724,7 @@
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>19.0.0</string>
 				<key>Replace</key>
 				<data>ww==</data>
 				<key>ReplaceMask</key>
@@ -872,7 +872,7 @@
 			<key>ShowPicker</key>
 			<false/>
 			<key>TakeoffDelay</key>
-			<integer>0</integer>
+			<integer>5000</integer>
 			<key>Timeout</key>
 			<integer>0</integer>
 		</dict>
@@ -908,6 +908,8 @@
 		<dict>
 			<key>AllowNvramReset</key>
 			<true/>
+			<key>AuthRestart</key>
+			<false/>
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>AuthRestart</key>
@@ -917,7 +919,7 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>Vault</key>
-			<string>Secure</string>
+			<string>Optional</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 		</dict>
@@ -945,7 +947,7 @@
 				<key>Comment</key>
 				<string>VerifyMsrE2</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Name</key>
 				<string>VerifyMsrE2</string>
 				<key>Path</key>
@@ -967,13 +969,13 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>dart=0 debug=0x100 keepsyms=1 -lilubetaall </string>
+				<string>dart=0 debug=0x100 keepsyms=1 -lilubetaall</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
 				<key>SystemAudioVolume</key>
-+				<data>Rg==</data>
+				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -1028,7 +1030,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
-			<false/>
+			<true/>
 			<key>MLB</key>
 			<string>C024168024NFH31AD</string>
 			<key>ROM</key>
@@ -1103,24 +1105,8 @@
 			<string>BuiltinGraphics</string>
 			<key>ConsoleMode</key>
 			<string></string>
-			<key>Resolution</key>
-			<string>Max</string>
-			<key>ClearScreenOnModeSwitch</key>
-			<false/>
-			<key>IgnoreTextInGraphics</key>
-			<false/>
-			<key>ProvideConsoleGop</key>
-			<true/>
 			<key>DirectGopRendering</key>
 			<false/>
-			<key>ReconnectOnResChange</key>
-			<false/>
-			<key>ReplaceTabWithSpace</key>
-			<false/>
-			<key>SanitiseClearScreen</key>
-			<false/>
-			<key>Scale</key>
-			<integer>100</integer>
 		</dict>
 		<key>Protocols</key>
 		<dict>
@@ -1135,7 +1121,7 @@
 			<key>AppleKeyMap</key>
 			<false/>
 			<key>AppleSmcIo</key>
-			<false/>
+			<true/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>DataHub</key>
