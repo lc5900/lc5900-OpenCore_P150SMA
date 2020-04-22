@@ -4,67 +4,97 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/VoodooInputMultitouch/MultitouchHelpers.h</key>
+		<key>Resources/VirtualSMCSDK/AppleSmc.h</key>
 		<data>
-		2Dn/wSPXmisHoAia4HckRfPF9VY=
+		NXIFHd6mMowFMMebQmDs8mMLUbM=
 		</data>
-		<key>Resources/VoodooInputMultitouch/VoodooInputEvent.h</key>
+		<key>Resources/VirtualSMCSDK/AppleSmcBridge.hpp</key>
 		<data>
-		4GTEuNGgjRofbAtGSyWz6Nbsnos=
+		ESD2eZOCs8cG327lrA5jU7BQLu8=
 		</data>
-		<key>Resources/VoodooInputMultitouch/VoodooInputMessages.h</key>
+		<key>Resources/VirtualSMCSDK/kern_keyvalue.hpp</key>
 		<data>
-		ITveLScF2AAkztNSTyiWkOCYc8U=
+		u0FIxRueUYPq9GrL1uPghl3Qp/U=
 		</data>
-		<key>Resources/VoodooInputMultitouch/VoodooInputTransducer.h</key>
+		<key>Resources/VirtualSMCSDK/kern_smcinfo.hpp</key>
 		<data>
-		tKf2y+abfZojxi5j6ykUe/xPcsw=
+		qsfLJR7OWFCrKfuvOjDlJ/Opz6g=
+		</data>
+		<key>Resources/VirtualSMCSDK/kern_value.hpp</key>
+		<data>
+		Td7R0D8dvzRAUo7WPApRsEEyXLY=
+		</data>
+		<key>Resources/VirtualSMCSDK/kern_vsmcapi.hpp</key>
+		<data>
+		GIacz291BjK+lv2JN7XUcMHpLNk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Resources/VoodooInputMultitouch/MultitouchHelpers.h</key>
+		<key>Resources/VirtualSMCSDK/AppleSmc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2Dn/wSPXmisHoAia4HckRfPF9VY=
+			NXIFHd6mMowFMMebQmDs8mMLUbM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sfb8D4oD0U3eU/uN3tJWzilbqnn/x967cYacLl0mbZc=
+			wEk9FXzdAAhRpcURMnvSfmUDbwlHqBxbEOh0sZAa8Zk=
 			</data>
 		</dict>
-		<key>Resources/VoodooInputMultitouch/VoodooInputEvent.h</key>
+		<key>Resources/VirtualSMCSDK/AppleSmcBridge.hpp</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4GTEuNGgjRofbAtGSyWz6Nbsnos=
+			ESD2eZOCs8cG327lrA5jU7BQLu8=
 			</data>
 			<key>hash2</key>
 			<data>
-			pU3r7vNH4yll7M033lo4m86PdykPsGcQ05X2FBUJqxA=
+			9O5l0NjBDrqSQ2be7CrTW7GQLCx14iLG7xG5EdAZV04=
 			</data>
 		</dict>
-		<key>Resources/VoodooInputMultitouch/VoodooInputMessages.h</key>
+		<key>Resources/VirtualSMCSDK/kern_keyvalue.hpp</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ITveLScF2AAkztNSTyiWkOCYc8U=
+			u0FIxRueUYPq9GrL1uPghl3Qp/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			6cZnFcLcCIBCR9exzPhAM5inJryl67pW37DSZJP2nI8=
+			g0vWXoJ8s0wPbqusEZIbFJ18j3Qrxz9kjj/7dOmKutk=
 			</data>
 		</dict>
-		<key>Resources/VoodooInputMultitouch/VoodooInputTransducer.h</key>
+		<key>Resources/VirtualSMCSDK/kern_smcinfo.hpp</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tKf2y+abfZojxi5j6ykUe/xPcsw=
+			qsfLJR7OWFCrKfuvOjDlJ/Opz6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			IvkIsPz4A0X9BU4ot3+PyGGBxdoOe16xvFDZY6rIctA=
+			+uE7BA6pL8y5dj6LKC/IMMIAnk5kqxBzFtqeDvIpm/s=
+			</data>
+		</dict>
+		<key>Resources/VirtualSMCSDK/kern_value.hpp</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Td7R0D8dvzRAUo7WPApRsEEyXLY=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xm/B89rzd8p9YxpzasF9HdnxKjGuCemB8s0LeYKSBWo=
+			</data>
+		</dict>
+		<key>Resources/VirtualSMCSDK/kern_vsmcapi.hpp</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GIacz291BjK+lv2JN7XUcMHpLNk=
+			</data>
+			<key>hash2</key>
+			<data>
+			gXZNhbhu5ySsjyHt2lOFoOSpNi6s3v9qxjpCpcs+Hj0=
 			</data>
 		</dict>
 	</dict>
