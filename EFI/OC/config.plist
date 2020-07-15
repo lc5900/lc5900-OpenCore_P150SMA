@@ -697,22 +697,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>AirPortAtheros40.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirPortAtheros40</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>Legacy_USB3.kext</string>
 				<key>Comment</key>
 				<string></string>
