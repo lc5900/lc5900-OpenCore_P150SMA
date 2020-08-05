@@ -74,9 +74,33 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
+				<string>SSDT-ALS0.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-IMEI.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Audio.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>Audio.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-dGPU-Off.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-dGPU-Off.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -274,7 +298,7 @@
 			<key>FadtEnableReset</key>
 			<false/>
 			<key>NormalizeHeaders</key>
-			<false/>
+			<true/>
 			<key>RebaseRegions</key>
 			<false/>
 			<key>ResetHwSig</key>
@@ -309,7 +333,7 @@
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
-			<false/>
+			<true/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
@@ -327,7 +351,7 @@
 			<key>ProtectSecureBoot</key>
 			<false/>
 			<key>ProtectUefiServices</key>
-			<false/>
+			<true/>
 			<key>ProvideCustomSlide</key>
 			<true/>
 			<key>RebuildAppleMemoryMap</key>
@@ -344,34 +368,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,27,0</string>
-				<key>device_type</key>
-				<string>Audio device</string>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>layout-id</key>
-				<data>NwAAAA==</data>
-				<key>model</key>
-				<string>8 Series/C220 Series Chipset High Definition Audio Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>BgAmCg==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
-				<key>device-id</key>
-				<data>EgQAAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-cursormem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -416,6 +412,19 @@
 				<string>USB controller</string>
 				<key>model</key>
 				<string>8 Series/C220 Series Chipset Family USB EHCI #2</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,27,0</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>layout-id</key>
+				<data>NwAAAA==</data>
+				<key>model</key>
+				<string>8 Series/C220 Series Chipset High Definition Audio Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
 			<dict>
@@ -467,7 +476,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,28,2/0,0</string>
 				<key>device_type</key>
-				<string>Unassigned class</string>
+				<string>???</string>
 				<key>model</key>
 				<string>RTL8411 PCI Express Card Reader</string>
 			</dict>
@@ -488,15 +497,6 @@
 				<string>PCI bridge</string>
 				<key>model</key>
 				<string>8 Series/C220 Series Chipset Family PCI Express Root Port #4</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,28,3/0,0</string>
-				<key>device_type</key>
-				<string>Network controller</string>
-				<key>model</key>
-				<string>AR9462 Wireless Network Adapter</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x0)</key>
 			<dict>
@@ -534,6 +534,21 @@
 				<key>model</key>
 				<string>8 Series/C220 Series Chipset Family SMBus Controller</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>BgAmCg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device-id</key>
+				<data>EgQAAA==</data>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-cursormem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x3,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -542,6 +557,15 @@
 				<string>Audio device</string>
 				<key>model</key>
 				<string>Xeon E3-1200 v3/4th Gen Core Processor HD Audio Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x3)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,28,3/0,0</string>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>model</key>
+				<string>AR9462 Wireless Network Adapter</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -592,22 +616,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>RTCMemoryFixup.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/RTCMemoryFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -697,22 +705,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>Legacy_USB3.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>Display-30e4-416.kext</string>
 				<key>Comment</key>
 				<string></string>
@@ -736,22 +728,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>ATH9KFixup.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/ATH9KFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -904,7 +880,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data></data>
 				<key>Identifier</key>
@@ -1138,6 +1114,8 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
+			<key>SerialInit</key>
+			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -1171,7 +1149,7 @@
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
 			<key>ExposeSensitiveData</key>
-			<integer>6</integer>
+			<integer>2</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>ScanPolicy</key>
@@ -1181,20 +1159,6 @@
 		</dict>
 		<key>Tools</key>
 		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>UEFI Shell</string>
-				<key>Path</key>
-				<string>OpenShell.efi</string>
-			</dict>
 			<dict>
 				<key>Arguments</key>
 				<string></string>
@@ -1225,7 +1189,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>rtcfx_exclude=10-FF dart=0 debug=0x100 keepsyms=1 -lilubetaall -wegnoegpu Kext-dev-mode=1</string>
+				<string>dart=0 debug=0x100 keepsyms=1 -lilubetaall -wegnoegpu Kext-dev-mode=1</string>
 				<key>csr-active-config</key>
 				<data>dwgAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1279,7 +1243,7 @@
 			</array>
 		</dict>
 		<key>WriteFlash</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -1288,7 +1252,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
-			<false/>
+			<true/>
 			<key>MLB</key>
 			<string>C024168024NFH31AD</string>
 			<key>ROM</key>
@@ -1317,6 +1281,8 @@
 		<dict>
 			<key>EnableJumpstart</key>
 			<true/>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
@@ -1352,6 +1318,7 @@
 			<string>NTFS.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>FirewireDriver.efi</string>
+			<string>AudioDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1366,7 +1333,7 @@
 			<key>KeySupportMode</key>
 			<string>Auto</string>
 			<key>KeySwap</key>
-			<false/>
+			<true/>
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
@@ -1379,7 +1346,7 @@
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ConsoleMode</key>
-			<string></string>
+			<string>Max</string>
 			<key>DirectGopRendering</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
@@ -1393,9 +1360,11 @@
 			<key>Resolution</key>
 			<string>Max</string>
 			<key>SanitiseClearScreen</key>
-			<false/>
+			<true/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+			<key>UgaPassThrough</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -1407,6 +1376,8 @@
 			<false/>
 			<key>AppleEvent</key>
 			<false/>
+			<key>AppleFramebufferInfo</key>
+			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
@@ -1414,13 +1385,13 @@
 			<key>AppleRtcRam</key>
 			<false/>
 			<key>AppleSmcIo</key>
-			<false/>
+			<true/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
-			<false/>
+			<true/>
 			<key>FirmwareVolume</key>
 			<false/>
 			<key>HashServices</key>
