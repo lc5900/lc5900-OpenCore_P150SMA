@@ -1,8 +1,17 @@
 # Clevo P150SMA OpenCore
 
-Clevo P150SMA 的维护型 OpenCore 配置。2026-08 更新分支将引导器迁移到 OpenCore 1.0.7，并保留原机的 ACPI、HD4600、USB 和 ALC892 layout 55 定制。
+Clevo P150SMA 的维护型 OpenCore 配置。2026-08 测试版将引导器迁移到 OpenCore 1.0.7，并保留原机的 ACPI、HD4600、USB 和 ALC892 layout 55 定制。
 
 > 这台机器已经不在维护者手中。当前更新通过静态检查，但没有真机启动、睡眠、音频、显示输出或升级测试。刷写前请备份可启动 EFI，并准备可恢复的 USB EFI。
+
+## 版本通道与标签
+
+| 通道 | Tag | 对应提交 | 用途与验证状态 |
+| --- | --- | --- | --- |
+| 正式回退版 | [`p150sma-stable-2022.01`](https://github.com/lc5900/lc5900-OpenCore_P150SMA/tree/p150sma-stable-2022.01) | `36e5fa2` | 2022-01 的原始 EFI 快照，包含 AppleALC 1.6.4 和当时的 OpenCore/kext 组合；用于回退参考，不代表适配当前 macOS。 |
+| 测试版 | [`p150sma-beta-2026.08`](https://github.com/lc5900/lc5900-OpenCore_P150SMA/tree/p150sma-beta-2026.08) | `e4e2fe3` | OpenCore 1.0.7、更新后的 kext，以及定制 AppleALC 1.9.8；`ocvalidate` 零错误，但尚未进行真机验证。 |
+
+需要恢复旧环境时使用正式回退版；尝试当前维护结果时使用测试版。测试版首次启动前必须重新生成 SMBIOS，并先复制到 USB EFI 验证，不要直接覆盖硬盘中唯一可启动的 EFI。测试通过后仍建议保留正式回退版和旧 EFI 备份。
 
 ## 当前组件
 
