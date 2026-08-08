@@ -15,7 +15,7 @@ Clevo P150SMA 的维护型 OpenCore 配置。2026-08 更新分支将引导器迁
 | VoodooPS2Controller | 2.3.7 |
 | HibernationFixup | 1.5.4 |
 | RealtekRTL8111 | 3.0.0 |
-| AppleALC | 1.6.4（临时保留旧的 layout 55 定制构建） |
+| AppleALC | 1.9.8（P150SMA layout 55 定制 RELEASE） |
 
 OpenCore 1.0.7 的 `ocvalidate` 检查结果为零错误。新版配置只加载 `HFSPlus.efi` 与 `OpenRuntime.efi`；旧 `Bootstrap.efi` 及非必要的 AudioDxe、ExFat、NTFS、FireWire UEFI 驱动已移除。
 
@@ -40,7 +40,7 @@ OpenCore 1.0.7 的 `ocvalidate` 检查结果为零错误。新版配置只加载
 
 ## 定制 AppleALC 更新
 
-声卡源码位于 [lc5900/AppleALC-P150sma-ALC892](https://github.com/lc5900/AppleALC-P150sma-ALC892)，P150SMA 使用 ALC892 layout 55。合并新版上游后，GitHub Actions 的 macOS CI 会生成定制 AppleALC artifact。取得新的 RELEASE `AppleALC.kext` 后，替换 `EFI/OC/Kexts/AppleALC.kext`，再核对版本与 layout 55；不要直接换成官方通用包。
+声卡源码位于 [lc5900/AppleALC-P150sma-ALC892](https://github.com/lc5900/AppleALC-P150sma-ALC892)，P150SMA 使用 ALC892 layout 55。当前 `AppleALC.kext` 来自该 fork 的 `1.9.7-p150sma.3` Release，实际构建版本为 1.9.8；不要直接换成官方通用包，否则会丢失本机 layout 55。
 
 ## 真机回归清单
 
